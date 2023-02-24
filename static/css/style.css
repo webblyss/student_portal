@@ -66,9 +66,20 @@ ul li >a{
         cursor: pointer;        
     }
 
-    ul{
-        display: none;
-    }
+    ul {
+        position: absolute;
+        left: 0;
+        right: 0;
+        background-color: teal;
+        padding: 10px;
+      }
+      ul li {
+        margin: 10px 0;
+      }
+      ul li a {
+        display: block;
+        padding: 5px;
+      }
    
 }
 
