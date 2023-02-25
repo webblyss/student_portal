@@ -37,7 +37,19 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'home',
+    'courses',
+    'student',
+    'instructor',
 ]
+
+AUTHENTICATION_BACKENDS = [
+    'django.contrib.auth.backends.ModelBackend', # default backend
+    'student.student_backend.StudentBackend', # custom student backend
+    'instructor.instructor_backend.InstructorBackend', # custom instructor backend
+]
+
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

@@ -1,11 +1,10 @@
 {% extends 'base.html' %}
 {% load static %}
 
-{% block title %}
-
-{% endblock %}
+{% block title %}{% endblock %}
 
 {% block  content %}
+{% block navbar %}
 
 <header>
     <nav>
@@ -25,12 +24,53 @@
         </div>
     </nav>
 </header>
+{% endblock  %}
+
 
 <!-- SECTION CONTAINER -->
 
-<section>
+<div class="w-4\/6 mx-auto grid grid-cols-4 mt-5">
+    <a href="courses/" class="w-48 m-5 p-5 shadow flex flex-col justify-center items-center cursor-pointer">
+       <img style="height: 100px;" src="{% static 'img/knowledge.png' %}" alt="">
+       <span class="mt-4 text-sm ">Course</span>
+    </a>
+
+    <a href="#" class="w-48 m-5 p-5 shadow flex flex-col justify-center items-center cursor-pointer">
+        <img style="height: 100px;" src="{% static 'img/online-learning.png' %}" alt="">
+        <span class="mt-4 text-sm ">Results</span>
+     </a>
+     <a href="#" class="w-48 m-5 p-5 shadow flex flex-col justify-center items-center cursor-pointer">
+        <img style="height: 100px;" src="{% static 'img/calendar.png' %}" alt="">
+        <span class="mt-4 text-sm ">Calendar</span>
+     </a>
+     <a href="#" class="w-48 m-5 p-5 shadow flex flex-col justify-center items-center cursor-pointer">
+        <img style="height: 100px;" src="{% static 'img/library.png' %}" alt="">
+        <span class="mt-4 text-sm ">Library</span>
+     </a>
+     <a href="#" class="w-48 m-5 p-5 shadow flex flex-col justify-center items-center cursor-pointer">
+        <img style="height: 100px;" src="{% static 'img/knowledge.png' %}" alt="">
+        <span class="mt-4 text-sm ">Fee</span>
+     </a>
+     <a href="#" class="w-48 m-5 p-5 shadow flex flex-col justify-center items-center cursor-pointer">
+        <img style="height: 100px;" src="{% static 'img/team.png' %}" alt="">
+        <span class="mt-4 text-sm ">Group Discussion</span>
+     </a>
+     <a href="#" class="w-48 m-5 p-5 shadow flex flex-col justify-center items-center cursor-pointer">
+        <img style="height: 100px;" src="{% static 'img/knowledge.png' %}" alt="">
+        <span class="mt-4 text-sm ">Take Test</span>
+     </a>
+     <a href="#" class="w-48 m-5 p-5 shadow flex flex-col justify-center items-center cursor-pointer">
+        <img style="height: 100px;" src="{% static 'img/man.png' %}" alt="">
+        <span class="mt-4 text-sm ">Profile</span>
+     </a>
     
-</section>
+</div>
+
+<!-- FOOTER -->
+<div class="footer fixed bottom-0 w-full w-screen h-10 bg-green-500 flex justify-center items-center">
+    <!-- Footer content here -->
+    <span>student management portal system</span>
+  </div>
 
 {% endblock %}
 
