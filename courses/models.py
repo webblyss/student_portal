@@ -9,7 +9,6 @@ class Course(models.Model):
     name = models.CharField(max_length=255)
     description = models.TextField()
     instructor = models.ForeignKey(Instructor, on_delete=models.CASCADE)
-    students = models.ManyToManyField(Student)
     
     
     def __str__(self):

@@ -41,6 +41,9 @@ INSTALLED_APPS = [
     'courses',
     'student',
     'instructor',
+    'result',
+    'donation',
+    'library',
 ]
 
 AUTHENTICATION_BACKENDS = [
