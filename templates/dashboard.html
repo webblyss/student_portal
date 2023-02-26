@@ -4,73 +4,94 @@
 {% block title %}{% endblock %}
 
 {% block  content %}
-{% block navbar %}
+<div class="dashboard">
+   <!-- SIDE NAVBAR -->
+   <nav>
+      <h3>Skill up</h3>
 
-<header>
-    <nav>
-        <div class="logo">
-            <h5>Portal</h5>
-        </div>
+      <div class="profile__container">
+         <div class="profile_pic">
+            <img src="{% static 'img/profile.jpg' %}" alt="">
+            <div class="online-active"></div>
+         </div>
+         <h3>Johnson Wilson</h3>
+         <span>New york,USA</span>
+         <button>23 Level</button>
+      </div>
 
-        <ul>
-            <li><a href="#">Results</a></li>
-            <li><a href="#">Courses</a></li>
-            <li><a href="#">Logout</a></li>
-        </ul>
+      <!-- RATE COUNT DOWN -->
+      <div class="rate--container">
+         <div class="progress-circle" data-progress="70">
+            <svg viewBox="0 0 100 100">
+              <circle class="progress-circle__background" cx="50" cy="50" r="45"></circle>
+              <circle class="progress-circle__progress" cx="50" cy="50" r="45"></circle>
+            </svg>
+            <div class="progress-circle__value">
+               70%
+             </div>
+          </div>
 
-        <!-- NAVIGATION BAR -->
-        <div class="hand-burger">
-            <div class="fa fa-bars"></div>
-        </div>
-    </nav>
-</header>
-{% endblock  %}
+          <!-- Courses Icons -->
+          <div class="courses__overview">
+               <div class="icon--ctx">
+                  <div class="icon_bg">
+                     <i class="fa fa-clock"></i>
+                  </div>
+                  <p>Hours</p>
+               </div>
+               <div class="icon--ctx">
+                  <div class="icon_bg">
+                     <i class="fa fa-level-up"></i>
+                  </div>
+                  <p>Lv1</p>
+               </div>
+               <div class="icon--ctx">
+                  <div class="icon_bg">
+                     <i class="fa fa-institution"></i>
+                  </div>
+                  <p>Exp</p>
+               </div>
+               <div class="icon--ctx">
+                  <div class="icon_bg">
+                     <i class="fa fa-computer"></i>
+                  </div>
+                  <p>Course</p>
+               </div>
+          </div>
 
 
-<!-- SECTION CONTAINER -->
+      </div>
 
-<div class="w-4\/6 mx-auto grid grid-cols-4 mt-5">
-    <a href="courses/" class="w-48 m-5 p-5 shadow flex flex-col justify-center items-center cursor-pointer">
-       <img style="height: 100px;" src="{% static 'img/knowledge.png' %}" alt="">
-       <span class="mt-4 text-sm ">Course</span>
-    </a>
+      <!-- COMPLEX OVERVIEW -->
+      <div class="complex-overview">
+         <h3>Hey Johnson 👋🏻</h3>
+         <span>Here is a complex overview</span>
+         <span>of your progress</span>
+      </div>
+   </nav>
 
-    <a href="#" class="w-48 m-5 p-5 shadow flex flex-col justify-center items-center cursor-pointer">
-        <img style="height: 100px;" src="{% static 'img/online-learning.png' %}" alt="">
-        <span class="mt-4 text-sm ">Results</span>
-     </a>
-     <a href="#" class="w-48 m-5 p-5 shadow flex flex-col justify-center items-center cursor-pointer">
-        <img style="height: 100px;" src="{% static 'img/calendar.png' %}" alt="">
-        <span class="mt-4 text-sm ">Calendar</span>
-     </a>
-     <a href="#" class="w-48 m-5 p-5 shadow flex flex-col justify-center items-center cursor-pointer">
-        <img style="height: 100px;" src="{% static 'img/library.png' %}" alt="">
-        <span class="mt-4 text-sm ">Library</span>
-     </a>
-     <a href="#" class="w-48 m-5 p-5 shadow flex flex-col justify-center items-center cursor-pointer">
-        <img style="height: 100px;" src="{% static 'img/knowledge.png' %}" alt="">
-        <span class="mt-4 text-sm ">Fee</span>
-     </a>
-     <a href="#" class="w-48 m-5 p-5 shadow flex flex-col justify-center items-center cursor-pointer">
-        <img style="height: 100px;" src="{% static 'img/team.png' %}" alt="">
-        <span class="mt-4 text-sm ">Group Discussion</span>
-     </a>
-     <a href="#" class="w-48 m-5 p-5 shadow flex flex-col justify-center items-center cursor-pointer">
-        <img style="height: 100px;" src="{% static 'img/knowledge.png' %}" alt="">
-        <span class="mt-4 text-sm ">Coding playground</span>
-     </a>
-     <a href="#" class="w-48 m-5 p-5 shadow flex flex-col justify-center items-center cursor-pointer">
-        <img style="height: 100px;" src="{% static 'img/man.png' %}" alt="">
-        <span class="mt-4 text-sm ">Profile</span>
-     </a>
-    
+   <!-- DASHBOARD SECTION -->
+
+   <div class="dashboard-showcase">
+      <div class="top--nav">
+         <div class="icon__notify__ctx">
+            <i class="fa fa-bell"></i>
+            <div class="notify">
+               <span>5</span>
+            </div>
+         </div>
+      </div>
+
+      <!-- SHOW DASHBOARD ICONS AND TEXT -->
+      
+
+
+   </div>
+
 </div>
+ 
 
-<!-- FOOTER -->
-<div class="footer fixed bottom-0 w-full w-screen h-10 bg-green-500 flex justify-center items-center">
-    <!-- Footer content here -->
-    <span>student management portal system</span>
-  </div>
+
 
 {% endblock %}
 
