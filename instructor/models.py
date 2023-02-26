@@ -43,7 +43,7 @@ class Instructor(AbstractBaseUser):
     objects = InstructorManager()
 
     def __str__(self):
-        return self.email
+        return self.firstName
 
     def has_perm(self, perm, obj=None):
         return True
