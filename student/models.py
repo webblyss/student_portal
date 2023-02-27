@@ -1,6 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import AbstractBaseUser, BaseUserManager
 
+
 class StudentManager(BaseUserManager):
     def create_user(self, email, firstName, lastName, phone, password=None):
         if not email:
@@ -50,7 +51,17 @@ class Student(AbstractBaseUser):
 
     def has_module_perms(self, app_label):
         return True
-
+ 
     @property
     def is_staff(self):
         return self.is_admin
+
+
+
+
+
+
+
+    
+    
+

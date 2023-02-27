@@ -4,8 +4,10 @@
 {% block title %}{% endblock %}
 
 {% block  content %}
+
 <div class="dashboard">
    <!-- SIDE NAVBAR -->
+   {% block navBar %}
    <nav>
       <h3>Skill up</h3>
 
@@ -69,7 +71,7 @@
          <span>of your progress</span>
       </div>
    </nav>
-
+   {% endblock %}
    <!-- DASHBOARD SECTION -->
 
    <div class="dashboard-showcase">
@@ -85,38 +87,54 @@
       <!-- SHOW DASHBOARD ICONS AND TEXT -->
       
          <div class="grid">
-            <div class="card__container">
-               <img src="{% static 'img/online-learning.png' %}" alt="">
-               <h4>Courses</h4>
-            </div>
-            <div class="card__container">
-               <img src="{% static 'img/library.png' %}" alt="">
-               <h4>Library</h4>
-            </div>
-            <div class="card__container">
-               <img src="{% static 'img/team.png' %}" alt="">
-               <h4>Chat room</h4>
-            </div>
-            <div class="card__container">
-               <img src="{% static 'img/man.png' %}" alt="">
-               <h4>Profile</h4>
-            </div>
-            <div class="card__container">
-               <img src="{% static 'img/knowledge.png' %}" alt="">
-               <h4>Courses</h4>
-            </div>
-            <div class="card__container">
-               <img src="{% static 'img/knowledge.png' %}" alt="">
-               <h4>Courses</h4>
-            </div>
-            <div class="card__container">
-               <img src="{% static 'img/knowledge.png' %}" alt="">
-               <h4>Courses</h4>
-            </div>
-            <div class="card__container">
-               <img src="{% static 'img/knowledge.png' %}" alt="">
-               <h4>Courses</h4>
-            </div>
+            <a href="{% url 'courses' %}">
+               <div class="card__container">
+                  <img src="{% static 'img/online-learning.png' %}" alt="">
+                  <h4>Courses</h4>
+               </div>
+            </a>
+            <a href="#">
+               <div class="card__container">
+                  <img src="{% static 'img/library.png' %}" alt="">
+                  <h4>Library</h4>
+               </div>
+            </a>
+            <a href="#">
+               <div class="card__container">
+                  <img src="{% static 'img/team.png' %}" alt="">
+                  <h4>Chat room</h4>
+               </div>
+            </a>
+            <a href="#">
+               <div class="card__container">
+                  <img src="{% static 'img/man.png' %}" alt="">
+                  <h4>Profile</h4>
+               </div>
+            </a>
+            <a href="#">
+               <div class="card__container">
+                  <img src="{% static 'img/knowledge.png' %}" alt="">
+                  <h4>Assigment</h4>
+               </div>
+            </a>
+            <a href="#">
+               <div class="card__container">
+                  <img src="{% static 'img/knowledge.png' %}" alt="">
+                  <h4>Quiz</h4>
+               </div>
+            </a>
+            <a href="#">
+               <div class="card__container">
+                  <img src="{% static 'img/knowledge.png' %}" alt="">
+                  <h4>Courses</h4>
+               </div>
+            </a>
+            <a href="#">
+               <div class="card__container">
+                  <img src="{% static 'img/calendar.png' %}" alt="">
+                  <h4>Course Outline</h4>
+               </div>
+            </a>
          </div>
 
    </div>
